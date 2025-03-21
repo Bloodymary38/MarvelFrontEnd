@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 
 const Comic = ({ key, elem }) => {
-  console.log(elem);
-
   return (
     <div className="ContainerFiche">
       <div className="Fiche" key={key}>
