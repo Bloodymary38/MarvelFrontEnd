@@ -9,15 +9,17 @@ const Comic = ({ key, elem }) => {
         <h2>{elem.title}</h2>
         <p>{elem.description}</p>
       </div>
-      <img
-        src={
-          elem.thumbnail.path +
-          "/portrait_xlarge" +
-          "." +
-          elem.thumbnail.extension
-        }
-        alt="img du comic"
-      />
+      <div className="Fiche">
+        <img
+          src={
+            elem.thumbnail.path +
+            "/portrait_xlarge" +
+            "." +
+            elem.thumbnail.extension
+          }
+          alt="img du comic"
+        />
+      </div>
     </div>
   );
 };

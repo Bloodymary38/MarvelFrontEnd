@@ -5,17 +5,21 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
-      <div>
-        <img src={Logo2} alt="Logo Marvel" />
+      <div className="left-header">
+        <img src={Logo} alt="Logo Marvel" />
       </div>
       <div className="right-header">
         <div>
-          <Link to="/Persos">Caracteres</Link>
+          <Link className="custom-link" to="/Persos">
+            Characters
+          </Link>
         </div>
         <div>
-          <Link to="/Comics">Comics</Link>
+          <Link className="custom-link" to="/Comics">
+            Comics
+          </Link>
         </div>
-        <div style={{ color: "blue" }}>toto</div>
+        <div className="custom-link">Favorites</div>
       </div>
     </header>
   );
